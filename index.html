@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Google+Sans"
+        />
 
         <script src="scripts.js"></script>
 
         <title>Carbon Tiptoe!</title>
     </head>
     <body>
-
         <nav class="custom-background-color">
             <div class="logo-group">
+                <img src="carbon-footprint.png" />
                 <h1>Carbon Tiptoe!</h1>
-                <img src="carbon-footprint.png" >
             </div>
 
             <div class="nav-group">
@@ -31,65 +33,91 @@
 
             <div class="auth-group">
                 <button class="triadic-background-color-1">Login</button>
-                <button class="triadic-background-color-2" onclick="showModal()">Sign up</button>
-            </div>    
+                <button
+                    class="triadic-background-color-2"
+                    onclick="showModal()"
+                >
+                    Sign up
+                </button>
+            </div>
         </nav>
 
         <header>
-            <div class="calculate-group">
-                <h1>Calculate your carbon footprint</h1>
-                <input class="header-input" type="text" placeholder="Enter your name" />
-                <input class="header-input" type="text" placeholder="Enter your age" />
-                <input class="header-input" type="text" placeholder="Enter your country" />
-                <button class="start-button custom-color">Start</button>
+            <div class="hero-group">
+                <h1>What is your carbon tiptoe?</h1>
+                <button class="start-button custom-color">Find Out now</button>
             </div>
         </header>
 
-        <section>
-            <div>
-                <h3>What are we?</h3>
-                <p>"We must act now" - Jacinda Ardern</p>
-                <p>Carbon Tiptoe is a carbon footprint calculator app designed to educate users about some of the biggest contributors to
-                carbon emissions and to help users see the impact their choices have on the environment. This app is intended for users
-                who have a desire to learn more about how their everyday choices impact the environment and want to take action to
-                mitigate their carbon footprint.</p>
-            </div>
-            
-            <div>
-                <h3>Our mission</h3>
-                <p>Our mission at "Carbon Tiptoe" is to increase awareness about climate change, solar and wind energy, and green lifestyle
-                choices. We provide information and resources about climate change, solar and wind energy, and green lifestyle choices in an
-                effort to increase awareness about these important topics. Our goal is to empower individuals to make informed choices
-                that will help protect our planet and its resources.
-                </p>
-
-                <h3>Our Sponsors</h3>
-                <div>
-                    <img src="carbon-footprint.png">
-                    <img src="carbon-footprint.png">
-                    <img src="carbon-footprint.png">
+        <div class="container">
+            <section class="about-section">
+                <div class="about-group-1">
+                    <h3>Who we are?</h3>
+                    <p>"We must act now" - Jacinda Ardern</p>
+                    <p>
+                        Carbon Tiptoe is a carbon footprint calculator app
+                        designed to educate users about some of the biggest
+                        contributors to carbon emissions and to help users see
+                        the impact their choices have on the environment. This
+                        app is intended for users who have a desire to learn
+                        more about how their everyday choices impact the
+                        environment and want to take action to mitigate their
+                        carbon footprint.
+                    </p>
                 </div>
-            </div>
 
-        </section>
+                <div class="about-group-2">
+                    <h3>Our mission</h3>
+                    <p>
+                        Our mission at "Carbon Tiptoe" is to increase awareness
+                        about climate change, solar and wind energy, and green
+                        lifestyle choices. We provide information and resources
+                        about climate change, solar and wind energy, and green
+                        lifestyle choices in an effort to increase awareness
+                        about these important topics. Our goal is to empower
+                        individuals to make informed choices that will help
+                        protect our planet and its resources.
+                    </p>
+                </div>
+            </section>
 
-        <footer>
-            <div class="logo">
-                <img src="carbon-footprint.png">
-                <h1>Carbon Tiptoe!</h1>
-            </div>
-            
-            <span>Please follow our socials:</span>
-            
-            <div class="socials">
-                <img src="facebook.png">
-                <img src="twitter.png">
-                <img src="instagram.png">
-                <img src="linkedin.png">
-            </div>
+            <section class="sponsors-section">
+                <div class="container">
+                    <h1>Our Sponsors</h1>
+                    <img src="sponsor-logos.png" />
+                    <img src="sponsor-logos.png" />
+                    <img src="sponsor-logos.png" />
+                    <img src="sponsor-logos.png" />
+                    <img src="sponsor-logos.png" />
+                </div>
+            </section>
 
-            <span><a href="https://www.flaticon.com/free-icons/" title="environment icons">Environment icons created by
-                    Freepik - Flaticon</a> | Matthew Ouyang</span>
-        </footer>
+            <footer>
+                <div class="container">
+                    <div class="logo">
+                        <img src="carbon-footprint.png" />
+                        <h1>Carbon Tiptoe!</h1>
+                    </div>
+
+                    <span>Please follow our socials:</span>
+
+                    <div class="socials">
+                        <img src="facebook.png" />
+                        <img src="twitter.png" />
+                        <img src="instagram.png" />
+                        <img src="linkedin.png" />
+                    </div>
+
+                    <span
+                        ><a
+                            href="https://www.flaticon.com/free-icons/"
+                            title="environment icons"
+                            >Environment icons created by Freepik - Flaticon</a
+                        >
+                        | Matthew Ouyang</span
+                    >
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
