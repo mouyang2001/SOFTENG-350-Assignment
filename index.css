@@ -6,18 +6,18 @@ body {
 }
 
 button {
-    width: 72px;
-    height: 32px;
+    width: 120px;
+    height: 36px;
     cursor: pointer;
     border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    color: black;
+    border-radius: 1000px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
 }
 
-button:hover {
-    background-color: #1859c9db;
-    transition: 200ms;
+section {
+    margin-bottom: 120px;
 }
 
 .custom-color {
@@ -28,26 +28,20 @@ button:hover {
     background-color: #af2b1e;
 }
 
-.triadic-background-color-1 {
-    background-color: #a3af1e;
-}
-
-.triadic-background-color-2 {
-    background-color: #1eaf2a;
-}
-
 .container {
     max-width: 1400px;
     margin: auto;
 }
 
-/*
-complementary: #1EA3AF
-analogous: #af1e5a, #af731e
-*/
-
 /* Navbar */
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +56,6 @@ nav {
     align-items: center;
     gap: 12px;
     cursor: pointer;
-    color: white;
 }
 
 .logo-group img {
@@ -80,7 +73,10 @@ nav {
 
 .nav-group ul li {
     cursor: pointer;
-    color: white;
+}
+
+.nav-group ul li:hover {
+    color: #af2b1e;
 }
 
 .auth-group {
@@ -90,46 +86,105 @@ nav {
 
 /* Header */
 header {
-}
-
-header {
+    padding-top: 140px;
     background-image: url("elephants-roger-brown.jpg");
-    height: 70vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
 }
 
 .hero-group {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
+    text-align: center;
 }
 
-.start-button {
-    width: 100px;
+.hero-group h1 {
+    font-size: 3em;
+}
+
+.hero-button {
+    width: 240px;
+    height: 72px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Tracker Section */
+.tracker-section {
+    text-align: center;
+}
+
+.tracker-section h1 {
+    font-size: 4.5em;
 }
 
 /* About Section */
-.about-section {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.about-section h1 {
+    text-align: center;
+    font-size: 3em;
 }
 
-.about-group-1 {
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 32px 16px;
 }
 
-.about-group-2 {
+.about-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 48px 32px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
 }
 
-/* Story Carousel */
+.about-card img {
+    width: 120px;
+    height: 120px;
+}
 
-/* Sponsor Sections */
+.about-card h1 {
+    text-align: center;
+}
+
+/* Sponsors Section */
+.sponsors-section {
+    text-align: center;
+}
+
+.sponsors-section  h1{
+    font-size: 48px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.sponsors-section img {
+    width: 64px;
+    height: 64px;
+}
 
 /* footer */
 footer {
     text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 64px 0;
+}
+
+footer h1 {
+    font-size: 48px;
+}
+
+.socials img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin: 12px;
 }
