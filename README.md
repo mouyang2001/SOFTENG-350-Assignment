@@ -6,5 +6,5 @@ TODO:
 [x] Sponsor wall
 [x] Footer
 [ ] Form modal
-[ ] Find a better background
-[ ] Add background to cards
+[x] Find a better background
+[x] Add background to cards

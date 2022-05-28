@@ -28,14 +28,10 @@ section {
     background-color: #af2b1e;
 }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-}
-
 /* Navbar */
 nav {
     position: fixed;
+    z-index: 1;
     width: 100%;
     top: 0;
     background-color: white;
@@ -87,8 +83,8 @@ nav {
 
 /* Header */
 header {
-    padding-top: 140px;
-    background-image: url("elephants-roger-brown.jpg");
+    padding-top: 200px;
+    background-image: url("background-1.jpg");
     height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +98,11 @@ header {
 }
 
 .hero-group h1 {
-    font-size: 3em;
+    font-size: 4em;
+}
+
+.hero-group h2 {
+    margin-bottom: 50px;
 }
 
 .hero-button {
@@ -126,6 +126,14 @@ header {
 }
 
 /* About Section */
+.about-section {
+    padding: 24px 0px;
+    background-image: url("background-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .about-section h1 {
     text-align: center;
     font-size: 3em;
@@ -139,6 +147,7 @@ header {
 }
 
 .about-card {
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 48px 32px;
     width: 300px;
@@ -153,6 +162,7 @@ header {
 
 .about-card h1 {
     text-align: center;
+    margin-bottom: 0px;
 }
 
 /* Sponsors Section */
