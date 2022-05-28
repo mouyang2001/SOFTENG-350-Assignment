@@ -20,6 +20,21 @@ section {
     margin-bottom: 120px;
 }
 
+input {
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 .custom-color {
     color: #af2b1e;
 }
@@ -66,6 +81,7 @@ nav {
     padding: 0;
     display: flex;
     gap: 48px;
+    font-size: 1.2em;
 }
 
 .nav-group ul li {
@@ -119,6 +135,7 @@ header {
 
 .tracker-section h1 {
     font-size: 4.5em;
+    margin-bottom: 0px;
 }
 
 .tracker-section span {
@@ -127,7 +144,7 @@ header {
 
 /* About Section */
 .about-section {
-    padding: 24px 0px;
+    padding: 24px 0 48px 0;
     background-image: url("background-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -170,7 +187,7 @@ header {
     text-align: center;
 }
 
-.sponsors-section  h1{
+.sponsors-section h1 {
     font-size: 48px;
 }
 
@@ -197,6 +214,10 @@ footer h1 {
     font-size: 48px;
 }
 
+.socials {
+    margin-bottom: 40px;
+}
+
 .socials img {
     cursor: pointer;
     width: 32px;
@@ -221,17 +242,39 @@ footer h1 {
 
 .modal-content {
     background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    width: 30%;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-header {
+    padding: 24px;
+}
+
+.modal-body {
+    padding: 0 48px 48px 48px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    gap: 4px;
 }
 
 .close {
-    color: #aaaaaa;
+    color: grey;
     float: right;
-    font-size: 28px;
+    font-size: 64px;
     font-weight: bold;
+}
+
+.modal-footer {
+    margin-bottom: 100px;
+    text-align: center;
 }
 
 .close:hover,

@@ -1,168 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="index.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Google+Sans"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans" />
+    <title>Carbon Tiptoe!</title>
+</head>
 
-        <title>Carbon Tiptoe!</title>
-    </head>
-    <body>
-        <nav>
-            <div class="navbar">
-                <div class="logo-group">
-                    <img src="carbon-footprint.png" />
-                    <h1>Carbon Tiptoe!</h1>
-                </div>
-                
-                <div class="nav-group">
-                    <ul>
-                        <li>Calculate</li>
-                        <li>Stories</li>
-                        <li>Donate</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                
-                <div class="auth-group">
-                    <button style="background-color: grey">Login</button>
-                    <button class="custom-background-color" id="trigger-modal" onclick="openModal()">
-                        Find out
-                    </button>
-                </div>
-            </div>
-            
-        </nav>
-
-        <header>
-            <div class="hero-group">
-                <h1>What is your Carbon Tiptoe?</h1>
-                <h2>Signup and Calculate it now</h2>
-                <button class="hero-button custom-background-color" id="trigger-modal" onclick="openModal()">Find Out</button>
-            </div>
-        </header>
-
-        <section class="tracker-section">
-            <h1 class="custom-color">2,293,736</h1>
-            <h2>Tests taken so far</h2>
-            <h3>Curious about your Carbon Tiptoe?</h3>
-            <h4><span class="custom-color" id="trigger-modal" onclick="openModal()">Find out</span> now.</h4>
-        </section>
-
-        <section class="about-section">
-            
-            <h1 class="custom-color">Who are we?</h1>
-            
-            <div class="about-cards">
-                <div class="about-card">
-                    <img src="light-bulb.png">
-                    <h1 style="color: #2b1eaf">Our Story</h1>
-                    
-                    <p>
-                        It all started as a group of friends who wanted to make a difference in the world. Carbon Tiptoe carbon footprint calculator has been educating millions of users on their carbon footprint and helping them to make a positive change.
-                    </p>
-
-                    <button style="background-color: #2b1eaf">More</button>
-                </div>
-                
-                <div class="about-card">
-                    <img src="earth.png">
-                    <h1 style="color: #1eaf2b">Our Mission</h1>
-                    <p>
-                        We are a team of developers who are passionate about the environment and tackling climate change. It is our mission to help users better understand their carbon footprint and easy steps to make a change. It is our hopes that you will find value in our application.
-                    </p>
-
-                    <button style="background-color: #1eaf2b">More</button>
-                </div>
-                
-                <div class="about-card">
-                    <img src="calculator.png">
-                    <h1 class="custom-color">Calculator</h1>
-                    <p>
-                        Our carbon footprint calculator is unlike any other. We have a state-of-the-art algorithm. The calculator is designed to be easy to use. It is our hopes that this tool will bring awareness to users carbon emissions and provide the resources to help them make a postive change.
-                    </p>
-
-                    <button class="custom-background-color" id="trigger-modal" onclick="openModal()">More</button>
-                </div>
-            </div>  
-        </section>
-
-        <section class="sponsors-section">
-                <h1 class="custom-color">Our Sponsors</h1>
-                <div class="sponsor-logos">
-                    <img src="google.png" />
-                    <img src="meta.png" />
-                    <img src="tesla.png" />
-                    <img src="conservation.png"/>
-                    <img src="wwf.png" />
-                </div>
-                
-        </section>
-
-        <footer>
+<body>
+    <nav>
+        <div class="navbar">
             <div class="logo-group">
                 <img src="carbon-footprint.png" />
                 <h1>Carbon Tiptoe!</h1>
             </div>
-        
-            <h2>Follow us on social media:</h2>
-        
-            <div class="socials">
-                <img src="facebook.png" />
-                <img src="twitter.png" />
-                <img src="instagram.png" />
-                <img src="linkedin.png" />
-            </div>
-        
-            <span class="span-author">
-                <a href="https://www.flaticon.com/free-icons/" title="Icon Source">Icons provided by Flaticons</a>
-                | Matthew Ouyang 2022
-            </span>
-        </footer>
 
-        <div class="modal" id="myModal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <h2>Carbon Tiptoe!</h2>
-                </div>
-                
+            <div class="nav-group">
+                <ul>
+                    <li>Calculate</li>
+                    <li>Articles</li>
+                    <li>Donate</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="auth-group">
+                <button style="background-color: #1a1a1a">Login</button>
+                <button class="custom-background-color" id="trigger-modal" onclick="openModal()">
+                    Find out
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+    <header>
+        <div class="hero-group">
+            <h1>What is your Carbon Tiptoe?</h1>
+            <h2>Signup and Calculate it now</h2>
+            <button class="hero-button custom-background-color" id="trigger-modal" onclick="openModal()">
+                Find Out
+            </button>
+        </div>
+    </header>
+
+    <section class="tracker-section">
+        <h1 class="custom-color">2,293,736</h1>
+        <h2>Tests taken so far</h2>
+        <h3>Curious about your Carbon Tiptoe?</h3>
+        <h4>Signup and <span class="custom-color" id="trigger-modal" onclick="openModal()">find out</span> now.</h4>
+    </section>
+
+    <section class="about-section">
+        <h1 class="custom-color">Who are we?</h1>
+        <div class="about-cards">
+            <div class="about-card">
+                <img src="light-bulb.png">
+                <h1 style="color: #2b1eaf">Our Story</h1>
+
+                <p>
+                    It all started as a group of friends who wanted to make a difference in the world. Carbon Tiptoe
+                    carbon footprint calculator has been educating millions of users on their carbon footprint and
+                    helping them to make a positive change.
+                </p>
+
+                <button style="background-color: #2b1eaf">More</button>
+            </div>
+
+            <div class="about-card">
+                <img src="earth.png">
+                <h1 style="color: #1eaf2b">Our Mission</h1>
+                <p>
+                    We are a team of developers who are passionate about the environment and tackling climate change. It
+                    is our mission to help users better understand their carbon footprint and easy steps to make a
+                    change. It is our hopes that you will find value in our application.
+                </p>
+
+                <button style="background-color: #1eaf2b">More</button>
+            </div>
+
+            <div class="about-card">
+                <img src="calculator.png">
+                <h1 class="custom-color">Calculator</h1>
+                <p>
+                    Our carbon footprint calculator is unlike any other. We have a state-of-the-art algorithm. The
+                    calculator is designed to be easy to use. It is our hopes that this tool will bring awareness to
+                    users carbon emissions and provide the resources to help them make a postive change.
+                </p>
+
+                <button class="custom-background-color" id="trigger-modal" onclick="openModal()">More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsors-section">
+        <h1 class="custom-color">Our Sponsors</h1>
+        <div class="sponsor-logos">
+            <img src="google.png" />
+            <img src="meta.png" />
+            <img src="tesla.png" />
+            <img src="conservation.png" />
+            <img src="wwf.png" />
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-group">
+            <img src="carbon-footprint.png" />
+            <h1>Carbon Tiptoe!</h1>
+        </div>
+
+        <h2>Follow us on social media:</h2>
+
+        <div class="socials">
+            <img src="facebook.png" />
+            <img src="twitter.png" />
+            <img src="instagram.png" />
+            <img src="linkedin.png" />
+        </div>
+
+        <span class="span-author">
+            <a href="https://www.pexels.com/">Images provided by Pexels</a> |
+            <a href="https://www.flaticon.com/" title="Icon Source">Icons provided by Flaticons</a> |
+            Matthew Ouyang 2022
+        </span>
+    </footer>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+
+            <div class="modal-body">
+                <h1 class="custom-color">Registration Form</h1>
+
                 <div id="ct-form">
                     <form>
-                        <div id="userDetails">
-                            <h1>User details</h1>
+                        <div class="form-section" id="userDetails">
+                            <h2>User details</h2>
+                            <span>Given Name</span>
                             <input class="custom-color" type="text" placeholder="Given name" />
-                            <input class="custom-color" type="text" placeholder="Surname"/>
-                            <input class="custom-color" type="text" placeholder="Username"/>
-                            <input class="custom-color" type="password" placeholder="Password"/>
+                            <span>Surname</span>
+                            <input class="custom-color" type="text" placeholder="Surname" />
+                            <span>Username</span>
+                            <input class="custom-color" type="text" placeholder="Username" />
+                            <span>Password</span>
+                            <input class="custom-color" type="password" placeholder="Password" />
                         </div>
 
-                        <div id="addresses">
-                            <h1>Addresses</h1>
-                            <input class="custom-color" type="text" placeholder="Home Address"/>
-                            <input class="custom-color" type="text" placeholder="Work Address"/>
+                        <div class="form-section" id="addresses">
+                            <h2>Addresses</h2>
+                            <span>Home Address</span>
+                            <input class="custom-color" type="text" placeholder="Home Address" />
+                            <span>Work Address</span>
+                            <input class="custom-color" type="text" placeholder="Work Address" />
                         </div>
 
-                        <div id="contacts">
-                            <h1>Contacts</h1>
+                        <div class="form-section" id="contacts">
+                            <h2>Contacts</h2>
+                            <span>Mobile Number</span>
                             <input class="custom-color" type="tel" placeholder="Mobile Number" />
+                            <span>Email</span>
                             <input class="custom-color" type="email" placeholder="Email" />
                         </div>
                     </form>
                 </div>
 
-                <div class="modal-footer">
-                    <button class="custom-background-color">Submit</button>
-                </div>
             </div>
-        </div>
 
-        <script src="script.js"></script>
-    </body>
+            <div class="modal-footer">
+                <button class="custom-background-color">Submit</button>
+                <p>Already have an account? Login <a class="custom-color">here</a>.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
