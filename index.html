@@ -10,8 +10,6 @@
             href="https://fonts.googleapis.com/css?family=Google+Sans"
         />
 
-        <script src="scripts.js"></script>
-
         <title>Carbon Tiptoe!</title>
     </head>
     <body>
@@ -34,7 +32,7 @@
                 
                 <div class="auth-group">
                     <button style="background-color: grey">Login</button>
-                    <button class="custom-background-color" onclick="showModal()">
+                    <button class="custom-background-color" id="trigger-modal" onclick="openModal()">
                         Find out
                     </button>
                 </div>
@@ -45,7 +43,7 @@
         <header>
             <div class="hero-group">
                 <h1>What is your Carbon Tiptoe?</h1>
-                <button class="hero-button custom-background-color">Find Out</button>
+                <button class="hero-button custom-background-color" id="trigger-modal" onclick="openModal()">Find Out</button>
             </div>
         </header>
 
@@ -54,7 +52,7 @@
                 <h1 class="custom-color">2,293,736</h1>
                 <h2>Tests taken so far</h2>
                 <h3>Curious about your Carbon Tiptoe?</h3>
-                <h4><span class="custom-color">Find out</span> now.</h4>
+                <h4><span class="custom-color" id="trigger-modal" onclick="openModal()">Find out</span> now.</h4>
             </section>
 
             <section class="about-section">
@@ -109,7 +107,10 @@
         </div>
 
         <footer>
-            <h1>Carbon Tiptoe!</h1>
+            <div class="logo-group">
+                <img src="carbon-footprint.png" />
+                <h1>Carbon Tiptoe!</h1>
+            </div>
         
             <h2>Follow us on social media:</h2>
         
@@ -125,5 +126,44 @@
                 | Matthew Ouyang 2022
             </span>
         </footer>
+
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Carbon Tiptoe!</h2>
+                </div>
+                
+                <div id="ct-form">
+                    <form>
+                        <div id="userDetails">
+                            <h1>User details</h1>
+                            <input class="custom-color" type="text" placeholder="Given name" />
+                            <input class="custom-color" type="text" placeholder="Surname"/>
+                            <input class="custom-color" type="text" placeholder="Username"/>
+                            <input class="custom-color" type="password" placeholder="Password"/>
+                        </div>
+
+                        <div id="addresses">
+                            <h1>Addresses</h1>
+                            <input class="custom-color" type="text" placeholder="Home Address"/>
+                            <input class="custom-color" type="text" placeholder="Work Address"/>
+                        </div>
+
+                        <div id="contacts">
+                            <h1>Contacts</h1>
+                            <input class="custom-color" type="tel" placeholder="Mobile Number" />
+                            <input class="custom-color" type="email" placeholder="Email" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="custom-background-color">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
