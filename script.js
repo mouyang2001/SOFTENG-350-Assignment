@@ -1,7 +1,9 @@
 const modal = document.getElementById("myModal");
+const givenNameInput = document.getElementById("givenNameInput");
 
 function openModal() {
     modal.style.display = "block";
+    givenNameInput.focus();
 }
 
 function closeModal() {
